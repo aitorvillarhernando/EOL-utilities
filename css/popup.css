@@ -1,0 +1,129 @@
+:root {
+  --clr-grey: hsl(228, 38%, 97%);
+  --clr-orange: hsl(30, 100%, 50%);
+  --clr-green: hsl(106, 31%, 27%);
+  --clr-white: hsl(0, 0%, 100%);
+}
+
+*, *::after, *::before {
+  box-sizing: content-box;
+}
+
+::selection {
+  color: var(--clr-white);
+  background: var(--clr-orange);
+}
+
+html, body, .popup-container, button, input {
+  color: hsl(0, 0%, 20%);
+  font-family: Courier, "Lucida Console", monospace;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+a, a:focus, a:hover, a:visited {
+  color: var(--clr-orange);
+  text-decoration: none;
+  position: relative;
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  right: -3px;
+  bottom: 0;
+  left: -3px;
+  height: 2px;
+  background-color: currentColor;
+  transform: scaleX(0%);
+  transform-origin: right;
+  transition: transform 250ms ease-in-out;
+}
+
+a:hover::before {
+  transform: scaleX(100%);
+  transform-origin: left;
+}
+
+img, svg {
+  max-width: 100%;
+}
+
+svg {
+  color: currentColor;
+  fill: currentColor;
+}
+
+.popup-container {
+  width: 450px;
+  overflow: hidden; 
+}
+
+header, footer {
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+header {
+  background-color: hsl(106, 31%, 27%);
+  color: var(--clr-white);
+  font-size: 1.5rem;
+}
+
+footer {
+  border-top: 1px solid var(--clr-grey);
+}
+
+.buttons-container {
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--clr-grey);
+}
+
+.orange {
+  color: var(--clr-orange);
+}
+
+button {
+  height: 100px;
+  width: 80px;
+  border: 1px solid #e7e7e7;
+  border-radius: 5px;
+  background: var(--clr-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color, color 150ms linear;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: .3em .5em;
+}
+
+button:hover {
+  background: var(--clr-green);
+  color: var(--clr-white);
+}
+
+button[disabled] {
+  opacity: .5;
+  cursor: not-allowed;
+}
+
+button svg {
+  width: 50%;
+}
+
+button * {
+  pointer-events: none;
+}

@@ -1,0 +1,12 @@
+# project
+_*
+builds
+captures
+
+# vscode
+.vscode/*
+*.code-workspace
+.history/
+
+# windows
+thumbs.db
