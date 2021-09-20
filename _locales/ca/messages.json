@@ -1,0 +1,71 @@
+{
+  "utilities": {
+    "message": "utilitats"
+  },
+  "posts_counter": {
+    "message": "Compta posts"
+  },
+  "coming_soon": {
+    "message": "En breu"
+  },
+  "developed_by": {
+    "message": "Desenvolupat per"
+  },
+  "close": {
+    "message": "Tanca"
+  },
+  "name": {
+    "message": "Nom"
+  },
+  "posts": {
+    "message": "Posts"
+  },
+  "count_again": {
+    "message": "Comptar de nou"
+  },
+  "thread_url": {
+    "message": "URL del fil"
+  },
+  "thread_url_placeholder": {
+    "message": "https://www.elotrolado.net/url-del-fil-sobre-el-que-comptar"
+  },
+  "thread_url_description": {
+    "message": "Introduir l'URL de la primera pàgina del fil (https://www.elotrolado.net/hilo_villalobos-alien-vs-predator_2433694) o l'identificador del fil (2433694)."
+  },
+  "start_page": {
+    "message": "Pàgina d'inici"
+  },
+  "start_page_description": {
+    "message": "Pàgina des de la qual es començarà a comptar."
+  },
+  "start_page_switch": {
+    "message": "Utilitza primera, actual o última pàgina"
+  },
+  "users_list": {
+    "message": "Llista d'usuaris"
+  },
+  "users_list_placeholder": {
+    "message": "Llop,Vilatà,Maleït"
+  },
+  "users_list_description": {
+    "message": "Llista d'usuaris dels quals es vol obtenir informació. Ha d'estar separada per coma, sense espais entre els noms. Si es deixa en blanc, es llegiran tots els noms del fil."
+  },
+  "count": {
+    "message": "Compta!"
+  },
+  "sort_by": {
+    "message": "Ordenar per"
+  },
+  "sort_by_posts_asc": {
+    "message": "Posts ascendent"
+  },
+  "sort_by_posts_desc": {
+    "message": "Posts descendent"
+  },
+  "sort_by_name_asc": {
+    "message": "Nom ascendent"
+  },
+  "sort_by_name_desc": {
+    "message": "Nom descendent"
+  }
+}

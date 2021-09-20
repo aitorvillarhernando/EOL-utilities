@@ -1,0 +1,71 @@
+{
+  "utilities": {
+    "message": "utilidades"
+  },
+  "posts_counter": {
+    "message": "Cuenta posts"
+  },
+  "coming_soon": {
+    "message": "En breve"
+  },
+  "developed_by": {
+    "message": "Desarrollado por"
+  },
+  "close": {
+    "message": "Cerrar"
+  },
+  "name": {
+    "message": "Nombre"
+  },
+  "posts": {
+    "message": "Posts"
+  },
+  "count_again": {
+    "message": "Contar de nuevo"
+  },
+  "thread_url": {
+    "message": "URL del hilo"
+  },
+  "thread_url_placeholder": {
+    "message": "https://www.elotrolado.net/url-del-hilo-sobre-el-que-contar"
+  },
+  "thread_url_description": {
+    "message": "Introducir la URL de la primera página del hilo (https://www.elotrolado.net/hilo_villalobos-alien-vs-predator_2433694) o el identificador del hilo (2433694)."
+  },
+  "start_page": {
+    "message": "Página de inicio"
+  },
+  "start_page_description": {
+    "message": "Página desde la que se empezará a contar."
+  },
+  "start_page_switch": {
+    "message": "Usar primera, actual o última página"
+  },
+  "users_list": {
+    "message": "Lista de usuarios"
+  },
+  "users_list_placeholder": {
+    "message": "Lobo,Aldeano,Maldito"
+  },
+  "users_list_description": {
+    "message": "Lista de usuarios de los que se quiere obtener información. Debe estar separada por comas y sin espacios entre los nombres. Si se deja en blanco se leerán todos los nombres del hilo."
+  },
+  "count": {
+    "message": "¡Contar!"
+  },
+  "sort_by": {
+    "message": "Ordenar por"
+  },
+  "sort_by_posts_asc": {
+    "message": "Posts ascendente"
+  },
+  "sort_by_posts_desc": {
+    "message": "Posts descendente"
+  },
+  "sort_by_name_asc": {
+    "message": "Nombre ascendente"
+  },
+  "sort_by_name_desc": {
+    "message": "Nombre descendente"
+  }
+}

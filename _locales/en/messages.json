@@ -1,0 +1,71 @@
+{
+  "utilities": {
+    "message": "utilities"
+  },
+  "posts_counter": {
+    "message": "Posts counter"
+  },
+  "coming_soon": {
+    "message": "Coming soon"
+  },
+  "developed_by": {
+    "message": "Developed by"
+  },
+  "close": {
+    "message": "Close"
+  },
+  "name": {
+    "message": "Name"
+  },
+  "posts": {
+    "message": "Posts"
+  },
+  "count_again": {
+    "message": "Count again"
+  },
+  "thread_url": {
+    "message": "Thread URL"
+  },
+  "thread_url_placeholder": {
+    "message": "https://www.elotrolado.net/thread-url-to-count-on"
+  },
+  "thread_url_description": {
+    "message": "Enter the URL of the first page of the thread (https://www.elotrolado.net/hilo_villalobos-alien-vs-predator_2433694) or the thread identifier (2433694)."
+  },
+  "start_page": {
+    "message": "Start page"
+  },
+  "start_page_description": {
+    "message": "Page from which to start counting."
+  },
+  "start_page_switch": {
+    "message": "Use first, current or last page"
+  },
+  "users_list": {
+    "message": "Users list"
+  },
+  "users_list_placeholder": {
+    "message": "Wolf,Villager,Cursed"
+  },
+  "users_list_description": {
+    "message": "List of users from whom you want to obtain information. It must be separated by commas and without spaces between the names. If left blank, all names in the thread will be read."
+  },
+  "count": {
+    "message": "Count!"
+  },
+  "sort_by": {
+    "message": "Sort by"
+  },
+  "sort_by_posts_asc": {
+    "message": "Posts ascending"
+  },
+  "sort_by_posts_desc": {
+    "message": "Posts descending"
+  },
+  "sort_by_name_asc": {
+    "message": "Name ascending"
+  },
+  "sort_by_name_desc": {
+    "message": "Name descending"
+  }
+}
