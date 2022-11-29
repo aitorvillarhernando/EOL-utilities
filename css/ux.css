@@ -1,0 +1,94 @@
+:root {
+  --clr-grey: hsl(228, 38%, 97%);
+  --clr-orange: hsl(30, 100%, 50%);
+  --clr-green: hsl(106, 31%, 27%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-dark-green: hsl(106, 30%, 17%);
+}
+
+.improve-ux a, .improve-ux .spoiler input {
+  transition: background-color 150ms linear, color 150ms linear;
+}
+
+.improve-ux div.spoiler > input:hover {
+  background-color: var(--clr-dark-green);
+}
+
+.improve-ux .row.post a, .improve-ux .row.post a:focus, .improve-ux .row.post a:hover, .improve-ux .row.post a:visited {
+  color: var(--clr-orange);
+  text-decoration: none;
+  position: relative;
+}
+
+.improve-ux .row.post a::before {
+  content: "";
+  position: absolute;
+  right: -3px;
+  bottom: -1px;
+  left: -3px;
+  height: 2px;
+  background-color: currentColor;
+  transform: scaleX(0%);
+  transform-origin: right;
+  transition: transform 250ms ease-in-out;
+}
+
+.improve-ux .row.post a:hover::before {
+  transform: scaleX(100%);
+  transform-origin: left;
+}
+
+.improve-ux .section .post .profile > a.author {
+  display: inline-block;
+}
+
+.improve-ux .section .post .profile .avatar > a {
+  display: block;
+}
+
+.improve-ux .section div.post {
+  position: relative;
+}
+
+.improve-ux .section div.post:before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  bottom: -3px;
+  left: -1px;
+  width: 4px;
+  height: 105%;
+  background-color: var(--clr-orange);
+  transform: scaleY(0%);
+  transform-origin: bottom;
+  transition: transform 500ms ease-in-out;
+  z-index: 999;
+}
+
+.improve-ux .section div.post:hover::before {
+  transform: scaleY(100%);
+  transform-origin: top;
+}
+
+.improve-ux .section div.post {
+  border: none!important;
+  padding-left: 2px;
+}
+
+.improve-ux div#submit-buttons {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 20px;
+  z-index: 1;
+}
+
+.improve-ux #submit-buttons > button {
+  margin: 0 2em;
+}

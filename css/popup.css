@@ -104,15 +104,19 @@ button {
   justify-content: space-around;
   align-items: center;
   cursor: pointer;
-  transition: background-color, color 150ms linear;
+  transition: background-color, color 250ms linear;
   font-weight: bold;
   font-size: 1.2rem;
   padding: .3em .5em;
 }
 
-button:hover {
+button:hover, button.active {
   background: var(--clr-green);
   color: var(--clr-white);
+}
+
+button.active {
+  background: var(--clr-orange);
 }
 
 button[disabled] {

@@ -67,5 +67,11 @@
   },
   "sort_by_name_desc": {
     "message": "Name descending"
+  },
+  "ad_blocker": {
+    "message": "Ad block"
+  },
+  "ux_improvements": {
+    "message": "Better UX"
   }
 }

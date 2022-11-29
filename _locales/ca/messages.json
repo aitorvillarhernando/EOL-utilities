@@ -67,5 +67,11 @@
   },
   "sort_by_name_desc": {
     "message": "Nom descendent"
+  },
+  "ad_blocker": {
+    "message": "Bloca anuncis"
+  },
+  "ux_improvements": {
+    "message": "Millor UX"
   }
 }

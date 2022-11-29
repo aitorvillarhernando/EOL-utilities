@@ -1,17 +1,6 @@
 const PAGE_MULTIPLIER = 50;
 const DOMAIN = 'elotrolado.net';
 
-const translateString = (text) => {
-  return text.replace(/__MSG_(\w+)__/g, localizeString);
-};
-
-const localizeString = (_, str) => (str ? chrome.i18n.getMessage(str) : "");
-
-const translateModal = () => {
-  // FIXME: this translation function removes all the events in the html elements
-  localizeHtmlPage(getModal());
-};
-
 const getModal = () => document.querySelector(".modal");
 
 const getSourceAsDOM = (url) => {
@@ -306,9 +295,3 @@ const openModal = () => {
 
   return true;
 };
-
-chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
-  if (request.message === "CUENTA_POSTS_EOL") {
-    sendResponse({ data: !getModal() ? openModal() : false });
-  }
-});
