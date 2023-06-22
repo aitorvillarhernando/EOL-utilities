@@ -13,7 +13,7 @@ const getSourceAsDOM = (url) => {
 
 const getStartPage = (startPage) => PAGE_MULTIPLIER * --startPage;
 
-const getUserTemplate = (name) => ({ name, count: 0 });
+const getUserTemplate = (name) => ({ name, count: 0, lastPost: { link: '', text: '' } });
 
 const initializeUsersArray = (usersList) =>
   usersList.reduce((acc, el) => {
@@ -35,6 +35,10 @@ const addUserCounting = (el, usersList, addNewUsers) => {
       usersList.push(user);
     }
     user.count++;
+    const permalink = el.closest('.profile').querySelector('.permalink');
+    if (permalink) {
+      user.lastPost = { link: permalink.href, text: permalink.parentElement.title };
+    }
   }
 };
 
@@ -60,11 +64,11 @@ const getPosts = (url, usersList, startPage, sortBy) => {
 const drawTable = (posts) => {
   const table = document.createElement("table");
   table.classList.add("table");
-  table.innerHTML = `<thead><th>${translateString("__MSG_name__")}</th><th>${translateString("__MSG_posts__")}</th></thead>`;
+  table.innerHTML = `<thead><th>${translateString("__MSG_name__")}</th><th class="text-center">${translateString("__MSG_posts__")}</th><th class="text-right">${translateString("__MSG_last_post__")}</th></thead>`;
   const tbody = document.createElement("tbody");
   let tbodyHTML = "";
-  posts.forEach((el) => {
-    tbodyHTML += `<tr><td>${el.name}</td><td>${el.count}</td></tr>`;
+  posts.forEach((post) => {
+    tbodyHTML += `<tr><td>${post.name}</td><td class="text-center">${post.count}</td><td class="text-right"><a href="${post.lastPost.link}">${post.lastPost.text}</a></td></tr>`;
   });
   tbody.innerHTML = tbodyHTML;
   table.appendChild(tbody);

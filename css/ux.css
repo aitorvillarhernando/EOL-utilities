@@ -6,6 +6,10 @@
   --clr-dark-green: hsl(106, 30%, 17%);
 }
 
+.improve-ux {
+  scroll-behavior: smooth;
+}
+
 .improve-ux a, .improve-ux .spoiler input {
   transition: background-color 150ms linear, color 150ms linear;
 }
